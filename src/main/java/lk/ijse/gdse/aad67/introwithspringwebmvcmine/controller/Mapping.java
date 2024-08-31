@@ -17,7 +17,7 @@ public class Mapping {
     }
 
     @PostMapping("/{name}/{value}")
-    public String helloPost(@PathVariable("name") String name, @PathVariable("value") String value) {
+    public String helloPost(@PathVariable("name") String name, @PathVariable("value") int value) {
         return "Path Variable is" + name + " and " + value;
     }
 }

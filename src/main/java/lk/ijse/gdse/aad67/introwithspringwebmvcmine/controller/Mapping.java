@@ -16,8 +16,8 @@ public class Mapping {
         return "Hello MappingTest";
     }
 
-    @PostMapping("/{name}")
-    public String helloPost(@PathVariable ("name") String name) {
-        return "Path Variable is" + name;
+    @PostMapping("/{name}/{value}")
+    public String helloPost(@PathVariable("name") String name, @PathVariable("value") String value) {
+        return "Path Variable is" + name + " and" + value;
     }
 }

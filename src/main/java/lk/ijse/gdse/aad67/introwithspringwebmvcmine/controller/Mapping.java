@@ -20,4 +20,9 @@ public class Mapping {
     public String helloPost(@PathVariable("name") String name, @PathVariable("value") int value) {
         return "Path Variable is" + name + " and " + value;
     }
+
+    @PostMapping("{id:S\\d{4}}")
+    public String helloPostRegex(@PathVariable("id") String id) {
+        return "Pattern Accepted and Path Variable is" + id;
+    }
 }

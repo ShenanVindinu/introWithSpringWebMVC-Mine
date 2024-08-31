@@ -1,6 +1,5 @@
 package lk.ijse.gdse.aad67.introwithspringwebmvcmine.controller;
 
-import jakarta.servlet.http.HttpServlet;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

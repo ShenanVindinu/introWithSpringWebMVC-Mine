@@ -15,6 +15,11 @@ public class Demo {
         return "Hello Demo";
     }
 
+    @GetMapping("other")
+    public String healthTest2() {
+        return "Hello Demo";
+    }
+
     @PostMapping
     public String healthTestPost() {
         return "Hello Demo Post";

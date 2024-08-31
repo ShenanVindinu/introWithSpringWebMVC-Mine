@@ -18,6 +18,6 @@ public class Mapping {
 
     @PostMapping("/{name}/{value}")
     public String helloPost(@PathVariable("name") String name, @PathVariable("value") String value) {
-        return "Path Variable is" + name + " and" + value;
+        return "Path Variable is" + name + " and " + value;
     }
 }

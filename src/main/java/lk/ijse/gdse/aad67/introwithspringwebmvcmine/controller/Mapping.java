@@ -25,4 +25,9 @@ public class Mapping {
     public String helloPostRegex(@PathVariable("id") String id) {
         return "Pattern Accepted and Path Variable is" + id;
     }
+
+    @PostMapping(params = {"name", "age"})
+    public String helloMappingPart5(@RequestParam("name") String name, @RequestParam("age") int age) {
+        return "Mapping Part 5" + name + " and " + age;
+    }
 }

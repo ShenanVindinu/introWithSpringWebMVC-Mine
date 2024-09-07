@@ -30,4 +30,9 @@ public class Mapping {
     public String helloMappingPart5(@RequestParam("name") String name, @RequestParam("age") int age) {
         return "Mapping Part 5 " + name + " and " + age;
     }
+
+    @PostMapping(headers = {"X-city"})
+    public String helloMappingPart6(@RequestHeader("X-city") String myCustomHeader) {
+        return "Mapping Part 6 " + myCustomHeader;
+    }
 }

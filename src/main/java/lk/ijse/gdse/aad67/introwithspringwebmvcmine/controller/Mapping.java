@@ -18,16 +18,16 @@ public class Mapping {
 
     @PostMapping("/{name}/{value}")
     public String helloPost(@PathVariable("name") String name, @PathVariable("value") int value) {
-        return "Path Variable is" + name + " and " + value;
+        return "Path Variable is " + name + " and " + value;
     }
 
     @PostMapping("{id:S\\d{4}}")
     public String helloPostRegex(@PathVariable("id") String id) {
-        return "Pattern Accepted and Path Variable is" + id;
+        return "Pattern Accepted and Path Variable is " + id;
     }
 
     @PostMapping(params = {"name", "age"})
     public String helloMappingPart5(@RequestParam("name") String name, @RequestParam("age") int age) {
-        return "Mapping Part 5" + name + " and " + age;
+        return "Mapping Part 5 " + name + " and " + age;
     }
 }

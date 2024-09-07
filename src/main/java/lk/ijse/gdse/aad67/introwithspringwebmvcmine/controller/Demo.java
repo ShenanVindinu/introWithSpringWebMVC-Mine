@@ -16,7 +16,7 @@ public class Demo {
 
     @GetMapping("other")
     public String healthTest2() {
-        return "Hello Demo";
+        return "Hello other";
     }
 
     @PostMapping

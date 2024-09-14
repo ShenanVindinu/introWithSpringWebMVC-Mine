@@ -1,6 +1,7 @@
 package lk.ijse.gdse.aad67.introwithspringwebmvcmine.controller;
 
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -34,5 +35,10 @@ public class Mapping {
     @PostMapping(headers = {"X-city","Content-Type"})
     public String helloMappingPart6(@RequestHeader("X-city") String myCustomHeader, @RequestHeader("Content-Type") String content) {
         return "Mapping Part 6 " + myCustomHeader + " and " + content;
+    }
+
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    public String helloMappingPart7() {
+        return "Mapping Part 7 ";
     }
 }
